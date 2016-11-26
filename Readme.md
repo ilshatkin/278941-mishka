@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ильшат Кил](https://up.htmlacademy.ru/adaptive/9/user/278941).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Иванец]](https://htmlacademy.ru/profile/id155879).
 
 ---
 
