@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__logo">
+    <img src="" alt="Мишка">
+  </div>
+  <nav class="main-nav main-nav--closed">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__items">
+        <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="form.html">Форма заказа</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<h1 class="title">Милые штуки ручной работы для дома</h1>
 
-  </body>
+<div class="promo">
+  <div class="promo__item promo__item--inter">
+
+    <a class="promo__item-link" href="#">Предметы интерьера</a>
+
+  </div>
+  <div class="promo__item promo__item--kid-toys">
+
+    <a class="promo__item-link" href="#">Детские игрушки</a>
+
+  </div>
+</div>
+<main class="main">
+  <div class="main__wrapper">
+    <section class="product-of-week product-of-week--divider">
+      <h2 class="product-of-week__title">Вязаные корзинки</h2>
+      <span class="product-of-week__caption">Товар недели</span>
+
+      <p class="product-of-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <table class="product-of-week__features">
+        <tr>
+          <td>Цвет</td>
+          <td>"Тиффани"/Серый</td>
+        </tr>
+        <tr>
+          <td>Диаметр</td>
+          <td>25 см</td>
+        </tr>
+        <tr>
+          <td>Высота:</td>
+          <td>15 см</td>
+        </tr>
+      </table>
+      <div class="product-of-week__item-picture">
+        <img src="" alt="">
+      </div>
+      <div class="product-of-week__item-buy">
+        <span class="products__price">Цена: 990 руб.</span>
+        <a class="btn products__btn">Заказать</a>
+      </div>
+    </section>
+
+    <section class="about-as">
+      <h2 class="about-as__title">Коротко о нас</h2>
+      <ul class="about-as__list">
+        <li class="about-as__list-item about-as__list-item--eco">Экологически чистые материалы</li>
+        <li class="about-as__list-item about-as__list-item--price">Скандинавский стиль по российской цене</li>
+        <li class="about-as__list-item about-as__list-item--likes">Увеличивает лайки на фотографиях</li>
+        <li class="about-as__list-item about-as__list-item--handmade">Связано вручную с любовью и умилением</li>
+        <li class="about-as__list-item about-as__list-item--native">Поддержка отечественного производителя</li>
+        <li class="about-as__list-item about-as__list-item--giftwrap">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <section class="reviews reviews--divider">
+      <div class="reviews__container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <blockquote class="reviews__slide">
+          <p class="reviews__user-review">Я молодая мама, но все равно фотографии не набирали и близко такого
+            количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
+            Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+
+          <div class="reviews__author">
+            <cite class="rewiews__author-name">Анастасия Красильникова</cite>
+            <address class="reviews__author-contacts">@misssssiskras</address>
+          </div>
+        </blockquote>
+        <div class="reviews__slider-controls">
+          <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--prev"><img src="" alt="назад"></a>
+          <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--next"><img src="" alt="вперед"></a>
+        </div>
+        <a href="" class="btn reviews__btn">Написать</a>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <span class="contacts__info">e-mail:</span>
+        <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <span class="contacts__info">адрес:</span>
+        <span class="contacts__adress">г. Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</span>
+      </div>
+      <div class="map-box">
+        <div class="map-holder">
+          <div id="map-canvas"></div>
+        </div>
+      </div>
+      <a href="" class="btn contacts__btn">Напишите нам</a>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__wrapper">
+    <ul class="social">
+      <li class="social__item social__item--instagram">
+        <a class="social__link" href="#"><img src="" alt="instagram"></a>
+      </li>
+      <li class="social__item social__item--fb">
+        <a class="social__link" href="#"><img src="" alt="fb"></a>
+      </li>
+      <li class="social__item social__item--twitter">
+        <a class="fsocial__link" href="#"><img src="" alt="twitter"></a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <span class="footer__studio">Разработано</span>
+      <a href="https://htmlacademy.ru/"><img class="copyright-logo" src="" alt="Разработано HTML-academy"></a>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
