@@ -3,9 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
+<header class="header">
+  <div class="header__logo">
+    <a href="index.html"><img src="" alt="Мишка"></a>
+  </div>
+  <nav class="main-nav main-nav--closed">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__items">
+        <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="form.html">Форма заказа</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 <div class="promo">
   <div class="promo__item promo__item--inter">
