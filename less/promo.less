@@ -2,4 +2,55 @@
   background-image:url('/img/hero-mobile@1x.jpg');
   background-repeat: no-repeat;
   height: 500px;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+
+.promo__header {
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  padding-top: 86px;
+  padding-bottom: 123px;
+  background: #f9f9f9 url(../img/hero-mobile@1x.jpg) no-repeat 50% 0;
+  background-size: 575px 373px;
+}
+
+.promo__title {
+  margin: 0;
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 240px;
+  text-align: center;
+}
+.promo__item--inter, .promo__item--kid-toys {
+  position: relative;
+}
+
+.promo__item--inter a {
+  background-color: #63d1bb;
+}
+
+.promo__item--kid-toys a {
+  background-color: #56c3b2;
+}
+
+.promo__item a {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 9%;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  transition: background .4s ease,color .1s ease,padding .4s ease,margin .4s ease;
+}
+
+.promo__item span {
+  display: block;
+  width: 130px;
 }

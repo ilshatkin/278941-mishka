@@ -3,35 +3,56 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="css/outlines.css">-->
 </head>
 <body>
+<div class="visualy-hidden">
+  <h1>Мишка - магазин товаров ручной работы</h1>
+</div>
 <header class="header">
-  <div class="header__logo">
-    <a href="index.html"><img src="" alt="Мишка"></a>
-  </div>
-  <nav class="main-nav main-nav--closed">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__items">
+
+  <div class="header__wrapper">
+    <nav class="main-nav  "> <!--main-nav&#45;&#45;closed-->
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <ul class="main-nav__list">
+        <li class="main-nav__item  main-nav__item--logo">
+          <picture>
+            <source srcset="img/logo-mobile.svg">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - магазин изделий ручной работы">
+          </picture>
+        </li>
         <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a href="form.html">Форма заказа</a></li>
-        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item main-nav__item--order"><a href="form.html">Форма заказа</a></li>
+        <li class="main-nav__item main-nav__item--search"><a href="search.html">Поиск по сайту</a></li>
+        <li class="main-nav__item main-nav__item--cart"><a href="cart.html">Корзина: пока пуста</a></li>
+        <li class="main-nav__item  main-nav__item--new"><a href="#">Новые поступления</a></li>
+        <li class="main-nav__item  main-nav__item--sale"><a href="#">Распродажа</a></li>
+        <li class="main-nav__item  main-nav__item--delivery"><span>Бесплатная доставка по России</span></li>
       </ul>
-    </div>
-  </nav>
+
+    </nav>
+  </div>
 </header>
 
 <div class="promo">
-  <div class="promo__item promo__item--inter">
+  <div class="promo__wrapper">
+    <div class="promo__header">
+      <h2 class="promo__title">Милые штуки ручной<br> работы для дома</h2>
+    </div>
+    <div class="promo__item promo__item--inter">
 
-    <a class="promo__item-link" href="#">Предметы интерьера</a>
+      <a class="promo__item-link" href="#"><span>Предметы интерьера</span></a>
 
-  </div>
-  <div class="promo__item promo__item--kid-toys">
+    </div>
+    <div class="promo__item promo__item--kid-toys">
 
-    <a class="promo__item-link" href="#">Детские игрушки</a>
+      <a class="promo__item-link" href="#"><span>Детские игрушки</span></a>
 
+    </div>
   </div>
 </div>
 <main class="main">
