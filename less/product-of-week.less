@@ -1,11 +1,112 @@
+.product-of-week {
+
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
 .product-of-week__wrapper {
-	min-width: 320px;
-	max-width: 500px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	padding-left: 9.3%;
-	padding-right: 9.3%;
-	padding-bottom: 41px;
-	box-sizing: border-box;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+
+}
+
+table.product-of-week__features {
+  width: 100%;
+  line-height: 50px;
+
+}
+
+.product-of-week__title {
+
+  width: 100%;
+
+}
+
+.product-of-week__options, .product-of-week__value {
+  padding-top: 9.5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.product-of-week__item-picture {
+  align-self: center;
+  flex-grow: 2;
+  padding: 20px;
+  width: 80%;
+  img {
+    width: 100%;
+
+  }
+}
+
+.product-of-week__btn {
+  align-self: center;
+
+}
+
+.product-of-week__price {
+  align-self: center;
+  padding-bottom: 26px;
+  font-family: "Verdana", Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #444;
+
+}
+
+@media @tablet-widths {
+
+  .product-of-week__wrapper {
+    flex-wrap: wrap;
+    height: 800px;
+
+  }
+
+  .product-of-week__description {
+    width: 43.3%;
+  }
+
+  table.product-of-week__features {
+    width: 43.3%;
+  }
+
+  .product-of-week__item-picture {
+    position: absolute;
+    right: 0;
+    width: 43.3%;
+  }
+
+  .product-of-week__btn {
+    width: 43.3%;
+
+  }
+
+  .product-of-week__price {
+    align-self: flex-start;
+
+    width: 43.3%;
+  }
+
+  .product-of-week__btn {
+    align-self: flex-start;
+  }
+}
+
+@media  @desktop-widths {
+
+  .product-of-week__item-picture img {
+    width: 525px;
+    height: 636px;
+  }
+
 }

@@ -1,33 +1,101 @@
-.contacts__wrapper{
+.contacts {
 
-	padding-right: 9.6%;
-	padding-left: 9%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+
+}
+
+.contacts__wrapper {
+
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.contacts__main-info {
+  padding-top: 26px;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+
+.contacts__e-mail {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  padding-bottom: 29px;
+}
+
+.contacts__item {
+  margin: 0;
+  line-height: 30px;
+  color: #444;
+}
+
+.contacts__item--value {
+  width: 183px;
 }
 
 .contacts__map {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	padding-bottom: 39px;
-	line-height: 0;
-	text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 39px;
+  line-height: 0;
+  text-align: center;
 }
 
-.contacts__btn {
-	display: flex;
-	justify-content: center;
-	padding-top: 15px;
-	padding-bottom: 17px;
-	font-family: "OpenSans",Arial,sans-serif;
-	font-weight: 700;
-	line-height: 16px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #444;
-	background: #fff;
-	border: 2px solid #444;
-	outline: none;
-	transition: color .3s ease,background .3s ease;
-	align-self: center;
-	width: 260px;
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+@media @tablet-widths {
+
+  .contacts__map img {
+    width: 100%;
+  }
+
+  .contacts__main-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 57px;
+    font-size: 16px;
+  }
+
+}
+
+@media  @desktop-widths {
+
+  .contacts {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 633px;
+    padding-bottom: 105px;
+
+  }
+
+  .contacts__main-info {
+    flex-direction: column;
+    padding-top: 49px;
+    padding-bottom: 80px;
+  }
+
+  .contacts__map, .contacts__map img {
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__btn {
+    align-self: flex-start;
+    margin-left: 225px;
+    order: -1;
+    width: 230px;
+  }
+
+  .contacts__wrapper {
+    order: -4;
+  }
+
 }
