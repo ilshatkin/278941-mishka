@@ -1,14 +1,12 @@
 .promo {
   position: relative;
   background-color: #f9f9f9;
+  width: 100%;
+  min-width: 320px;
 }
 
-.promo__wrapper {
 
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .promo__header {
   display: flex;
@@ -17,17 +15,18 @@
   padding-top: 86px;
   padding-bottom: 123px;
   background: #f9f9f9 url(../img/hero-mobile@1x.jpg) no-repeat 50% 0;
-  background-size: 575px 373px;
+
 }
 
 .promo__title {
   margin: 0;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 27px;
+  font-weight: bold;
   line-height: 30px;
-  width: 240px;
+  width: 250px;
   text-align: center;
+  word-spacing: 5px;
+
 }
 
 .promo__item {
@@ -35,18 +34,17 @@
   a {
     display: block;
     padding-top: 25px;
-    padding-bottom: 30px;
-    padding-left: 9%;
-    font-size: 18px;
-    font-weight: 700;
+    line-height: 24px;
+    font-size: 19px;
+    font-weight: bold;
     text-decoration: none;
     color: #fff;
-    transition: background .4s ease, color .1s ease, padding .4s ease, margin .4s ease;
+
   }
 
-  span {
-    display: block;
-    width: 130px;
+  div {
+    margin: 0 auto;
+    width: 260px;
   }
 
   &--inter {
@@ -79,7 +77,8 @@
   }
 
   .promo__title {
-    width: 300px;
+    width: 500px;
+    word-spacing: 7px;
   }
 
   .promo__list {
@@ -90,7 +89,7 @@
 
   .promo__item {
 
-    width: 43.5%;
+    width: 100%;
 
     a {
       width: 100%;
@@ -99,7 +98,18 @@
       font-size: 20px;
       line-height: 30px;
     }
+
+    &--inter {
+      margin-left: 50px;
+    }
+
+    &--kid-toys {
+      margin-right: 50px;
+    }
+
   }
+
+
 
 }
 
@@ -111,10 +121,10 @@
   }
 
   .promo__title {
-    width: 800px;
-    font-size: 50px;
+    width: 650px;
+    font-size: 53px;
     line-height: 57px;
-
+    word-spacing: 10px;
   }
 
 }
