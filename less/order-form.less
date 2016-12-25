@@ -63,16 +63,15 @@
     padding-bottom: 30px;
 
 
-    &--tel{
+    &--tel {
       padding-bottom: 10px;
     }
-    &--email{
-      padding-top:10px;
+
+    &--email {
+      padding-top: 10px;
     }
 
-
   }
-
 
 }
 
@@ -89,6 +88,13 @@
   @media @tablet-widths {
     width: 167px;
     flex-shrink: 0;
+  }
+
+  @media @desktop-widths {
+
+    text-align: center;
+    padding-top: 20px;
+
   }
 
 }
@@ -123,7 +129,13 @@
   display: inline-block;
   vertical-align: top;
   width: 65px;
-  margin-bottom: 28px
+  margin-bottom: 28px;
+  background-color: #fff;
+
+  @media @tablet-widths {
+    background-color: transparent;
+  }
+
 }
 
 .order-form__fieldset-title--email {
@@ -163,7 +175,8 @@
   position: relative;
 
   @media @tablet-widths {
-    line-height: 27px;
+    line-height: 52px;
+    padding-left: 80px;
   }
 }
 
@@ -182,7 +195,12 @@
   margin-left: 4px;
   margin-top: -5px;
   position: absolute;
-  left: 0
+  left: 0;
+  @media @tablet-widths {
+    width: 52px;
+    height:52px;
+  }
+
 }
 
 .order-form__type-variant-label:hover:before {
@@ -253,6 +271,12 @@
     width: 50%;
   }
 
+  @media  @desktop-widths {
+    width: 30%;
+  }
+
+
+
   &--name {
     @media @tablet-widths {
       width: 50%;
@@ -284,6 +308,7 @@
 
   @media @tablet-widths {
     padding-right: 20px;
+    padding-top: 15px;
   }
 
 }
@@ -506,8 +531,6 @@
     width: 100%;
   }
 
-
-
 }
 
 .order-form__extra--invalid {
@@ -528,12 +551,12 @@
   margin-top: 10px;
   margin-bottom: 19px;
 
-  margin-left:  auto;
-  margin-right:  auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 260px;
 
   @media @tablet-widths {
-    margin-right:0;
+    margin-right: 0;
     width: 100%;
     text-align: right;
     font-size: 17px;
@@ -541,7 +564,7 @@
 
 }
 
-.btn--order-form-send{
+.btn--order-form-send {
 
   width: 260px;
   @media @tablet-widths {
@@ -565,15 +588,21 @@
     flex-wrap: nowrap;
     flex-direction: row;
 
-    &--send{
+    &--send {
 
-      justify-content: space-between;
+
+
+      @media @desktop-widths {
+
+        padding-left: 170px;
+
+      }
     }
 
   }
   @media @desktop-widths {
     width: 1050px;
-
+    padding-right: 175px;
 
   }
 
@@ -584,6 +613,10 @@
   top: 38px;
   right: 8px;
   fill: #ccc;
+
+  @media @desktop-widths {
+    right: 180px;
+  }
 }
 
 .order-form__fieldset-wrap--email svg {
@@ -594,6 +627,10 @@
 
   @media @tablet-widths {
     top: 0;
+  }
+
+  @media @desktop-widths {
+    right: 180px;
   }
 
 }
