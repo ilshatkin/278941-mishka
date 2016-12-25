@@ -5,7 +5,11 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/outlines.css">-->
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 
 </head>
 <body>
@@ -66,8 +70,6 @@
 
   <div class="header__wrapper">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--logo">
           <picture>
@@ -75,6 +77,7 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - магазин изделий ручной работы">
           </picture>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
         </li>
 
         <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
@@ -95,7 +98,6 @@
         <li class="main-nav__item  main-nav__item--sale"><a href="#">Распродажа</a></li>
         <li class="main-nav__item  main-nav__item--delivery"><span>Бесплатная доставка по России</span></li>
       </ul>
-
     </nav>
   </div>
 </header>
@@ -245,8 +247,7 @@
 <footer class="footer">
   <div class="footer__wrapper">
     <div class="footer__logo-container">
-
-      <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - магазин изделий ручной работы">
+      <img src="img/logo-footer.svg" width="86" height="35" alt="Мишка - магазин изделий ручной работы">
     </div>
     <ul class="social">
       <li class="social__item social__item--instagram">
