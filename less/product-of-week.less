@@ -1,9 +1,19 @@
 .product-of-week {
+
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position: 1px bottom;
+  background-size: auto 6px;
+
   &::after {
     content: "";
-
     display: table;
     clear: both;
+  }
+
+  @media @tablet-widths {
+    background-position: 0 bottom;
+    background-size: auto 15px;
   }
 
 }
@@ -16,9 +26,12 @@
     width: 668px;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-bottom: 80px;
   }
   @media @desktop-widths {
     width: 1050px;
+    padding-bottom: 120px;
+
   }
 
 }
@@ -37,7 +50,9 @@ table.product-of-week__features {
   }
 
   @media @desktop-widths {
-    padding-left: 130px;
+    padding-left: 175px;
+    padding-bottom: 60px;
+
   }
 
 }
@@ -48,17 +63,19 @@ table.product-of-week__features {
 }
 
 .product-of-week__title {
-  margin-top: 60px;
+  font-family: "opensansbold", Arial, sans-serif;
+  margin-top: 33px;
   margin-bottom: 12px;
   font-size: 25px;
 
   @media @tablet-widths {
     font-size: 43px;
+    margin-top: 60px;
   }
 
   @media @desktop-widths {
     font-size: 53px;
-    margin-left: 130px;
+    margin-left: 175px;
     margin-top: 130px;
   }
 
@@ -71,6 +88,7 @@ table.product-of-week__features {
   text-transform: uppercase;
 
   @media @tablet-widths {
+    font-size: 20px;
     width: 120px;
     margin-top: -50px;
     text-align: center;
@@ -79,6 +97,9 @@ table.product-of-week__features {
 
   @media @desktop-widths {
     float: left;
+    line-height: 17px;
+    margin-top: -40px;
+    font-size: 17px;
   }
 
 }
@@ -89,12 +110,14 @@ table.product-of-week__features {
 
   @media @tablet-widths {
     font-size: 17px;
-    width: 45%;
+    width: 40%;
     padding-top: 50px;
   }
 
   @media @desktop-widths {
-    padding-left: 130px;
+    line-height: 35px;
+    width: 450px;
+    padding-left: 175px;
   }
 
 }
@@ -121,12 +144,13 @@ table.product-of-week__features {
   }
 
   @media @desktop-widths {
-    margin-top: -255px;
+    margin-top: -330px;
   }
 
 }
 
 .product-of-week__price {
+  font-family: "opensansbold", Arial, sans-serif;
   padding-bottom: 30px;
   font-size: 17px;
   font-weight: 900;
@@ -137,18 +161,21 @@ table.product-of-week__features {
     width: 45%;
   }
   @media @desktop-widths {
-    padding-left: 130px;
+    padding-left: 175px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
   }
 }
 
 .product-of-week__btn {
 
   @media @tablet-widths {
-    width: 45%;
+    width: 230px;
   }
 
   @media @desktop-widths {
-    margin-left: 130px;
-    width: 33%;
+    margin-left: 175px;
+
   }
 }
