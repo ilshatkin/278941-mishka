@@ -1,3 +1,62 @@
-.main{
+.main {
   min-width: 320px;
+}
+
+.main__wrapper {
+  margin: 0 auto;
+  width: 260px;
+  @media @tablet-widths {
+    width: 668px;
+  }
+  @media @desktop-widths {
+    width: 1050px;
+
+  }
+}
+
+.main__title {
+  font-family: "opensansbold", Arial, sans-serif;
+  font-size: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f1f1f1;
+  height: 176px;
+  width: 100%;
+  padding-top: 75px;
+  margin: 0;
+
+  @media @tablet-widths {
+
+    font-size: 43px;
+    margin-top: -60px;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: auto 23px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+  }
+
+  @media @desktop-widths {
+    font-size: 53px;
+    background-size: auto;
+
+  }
+}
+
+.main__description {
+  font-size: 13px;
+  padding-bottom: 50px;
+
+  @media @tablet-widths {
+    padding-top: 75px;
+    padding-bottom: 0px;
+    font-size: 17px;
+  }
+
+  @media @desktop-widths {
+    padding-left: 170px;
+    padding-right: 175px;
+  }
 }

@@ -1,0 +1,135 @@
+.production-process {
+  margin-top: 30px;
+  border: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+
+  @media  @desktop-widths {
+
+    flex-wrap: wrap;
+
+  }
+  @media  @desktop-widths {
+    height: 455px;
+  }
+}
+
+.production-process__title {
+  font-family: "opensansbold", Arial, sans-serif;
+  position: relative;
+  padding-top: 23px;
+  padding-left: 60px;
+  width: 200px;
+  font-size: 17px;
+  text-align: left;
+
+  @media @tablet-widths {
+    width: 584px;
+    padding-left: 100px;
+  }
+
+  @media  @desktop-widths {
+    padding-left: 60px;
+    width: 185px;
+    padding-top: 95px;
+
+  }
+}
+
+.production-process__title::before {
+  content: "";
+  position: absolute;
+  left: 12.9%;
+  width: 32px;
+  height: 32px;
+  background: url(/img/icon-video.svg) no-repeat 50% 50%;
+  background-size: 32px 32px;
+
+  @media @tablet-widths {
+    left: 40px;
+  }
+  @media  @desktop-widths {
+    top: 41px;
+    left: 60px;
+  }
+
+}
+
+.production-process__video-container {
+  position: relative;
+
+  @media @tablet-widths {
+    order: -1;
+
+  }
+  img {
+    @media @tablet-widths {
+      width: 100%;
+    }
+    @media  @desktop-widths {
+      width: 681px;
+    }
+
+  }
+
+}
+
+.production-process__play-btn {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  width: 101px;
+  height: 77px;
+  font-size: 0;
+  line-height: 0;
+  background: url(../img/icon-play.svg) no-repeat 50% 50%;
+  background-size: 101px 77px;
+  cursor: pointer;
+  transition: transform .2s ease, opacity .2s ease;
+  @media @tablet-widths {
+    top: 45%;
+    left: 45%;
+  }
+
+}
+
+.production-process__text {
+
+  width: 190px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #444;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  @media @tablet-widths {
+    width: 584px;
+    font-size: 15px;
+  }
+
+  @media  @desktop-widths {
+
+    margin: 0;
+    padding-left: 60px;
+    width: 310px;
+
+  }
+
+}
+
+.production-process__btn {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media @tablet-widths {
+    width: 584px;
+  }
+
+  @media  @desktop-widths {
+    margin: 0;
+    width: 230px;
+
+  }
+}
