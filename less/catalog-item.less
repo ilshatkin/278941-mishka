@@ -5,6 +5,15 @@
   flex-direction: column;
   padding-bottom: 20px;
 
+
+  &:hover{
+    box-shadow: 0 6px 10px rgba(0,0,0,.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  }
+
   @media @tablet-widths {
     flex-direction: row;
     padding-bottom: 0;
@@ -62,12 +71,19 @@
   font-size: 17px;
   text-align: center;
 
+  &:hover{
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+
   @media @tablet-widths {
     text-align: left;
     font-size: 20px;
 
   }
-
 }
 
 .catalog-item__title a {
@@ -132,4 +148,16 @@
 .catalog-item__cart-icon {
   fill: #221f1f;
   opacity: .2;
+
+  &:hover{
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: .3;
+  }
+
+
 }

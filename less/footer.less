@@ -32,9 +32,21 @@
 
 .footer__logo-container {
   display: none;
+
   @media @tablet-widths {
     display: block;
     width: 33%;
+
+    &:hover{
+      opacity: 1;
+      fill: #63d1bb;
+    }
+
+    &:active {
+      fill: #63d1bb;
+      opacity: .3;
+    }
+
   }
 
 }
@@ -69,6 +81,16 @@
     width: 60px;
   }
 
+  &:hover svg{
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active svg{
+    fill: #63d1bb;
+    opacity: .3;
+  }
+
 }
 
 .footer__copyright {
@@ -78,6 +100,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  &:hover{
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 
   @media@tablet-widths {
     width: 33%;
@@ -97,5 +127,16 @@
   @media @desktop-widths {
     margin-left: 27px;
   }
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: .3;
+  }
+
 
 }

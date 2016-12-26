@@ -13,6 +13,14 @@
   @media  @desktop-widths {
     height: 455px;
   }
+
+  &:hover{
+    box-shadow: 0 6px 10px rgba(0,0,0,.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  }
 }
 
 .production-process__title {
@@ -87,9 +95,39 @@
   background-size: 101px 77px;
   cursor: pointer;
   transition: transform .2s ease, opacity .2s ease;
+
+  &:hover {
+    background-size: contain;
+    top: 30px;
+    left: 72px;
+    width: 121px;
+    height: 92px;
+  }
+  &:active {
+    top: 50px;
+    left: 88px;
+    width: 80px;
+    height: 61px;
+    opacity: .6;
+  }
+
   @media @tablet-widths {
-    top: 45%;
-    left: 45%;
+    top: 200px;
+    left:300px;
+
+    &:hover {
+      top: 190px;
+      left: 290px;
+      width: 121px;
+      height: 92px;
+    }
+    &:active {
+      top: 210px;
+      left: 307px;
+      width: 80px;
+      height: 61px;
+      opacity: .6;
+    }
   }
 
 }
