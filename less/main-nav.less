@@ -33,7 +33,7 @@
 .main-nav__item {
   position: relative;
   display: flex;
-  //border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
 
   a {
     width: 100%;
@@ -60,13 +60,59 @@
   }
   &--cart {
     position: relative;
+
+    a {
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: 20px;
+        fill: rgba(0, 0, 0, .2);
+
+      }
+    }
+    :hover svg {
+      fill: #63d1bb;
+    }
+
+    &:active svg{
+      fill: #63d1bb;
+      opacity: .3;
+    }
   }
   &--search {
     position: relative;
+
+
+    a {
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: 20px;
+        fill: rgba(0, 0, 0, .2);
+
+      }
+    }
+    :hover svg {
+      fill: #63d1bb;
+    }
+
+    &:active svg{
+      fill: #63d1bb;
+      opacity: .3;
+    }
+
+
     @media @tablet-widths {
       a {
+
         padding-top: 32px;
         padding-bottom: 32px;
+
+        svg {
+          left: 32px;
+        }
       }
     }
   }
@@ -219,7 +265,7 @@ a.main-nav__main-link {
     align-items: flex-start;
     width: 26%;
     font-size: 14px;
-    border-bottom: none;
+    border-top: none;
 
     a {
       width: 100%;
@@ -239,7 +285,7 @@ a.main-nav__main-link {
       padding-bottom: 13px;
       padding-left: 6.25%;
       border-top: none;
-      //border-bottom: 1px solid #ececec;
+      border-bottom: 0;
     }
     &--search {
       order: -2;
@@ -247,28 +293,9 @@ a.main-nav__main-link {
       font-size: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-
-      //border: 1px solid #ececec;
+      border-bottom: 0;
       border-top: none;
 
-      a {
-        position: relative;
-
-        svg {
-          position: absolute;
-          left: 32px;
-          fill: rgba(0, 0, 0, .2);
-
-        }
-      }
-      :hover svg {
-        fill: #63d1bb;
-      }
-
-      &:active svg{
-        fill: #63d1bb;
-        opacity: .3;
-      }
 
     }
 
@@ -297,7 +324,7 @@ a.main-nav__main-link {
       order: -1;
       width: 40.86%;
       font-size: 17px;
-      //border-bottom: 1px solid #ececec;
+      border-bottom: 0;
 
       a {
         padding: 31px 50px 33px 0;
@@ -434,7 +461,7 @@ a.main-nav__main-link {
   .main-nav__item--catalog, .main-nav__item--order {
     order: -8;
     font-size: 17px;
-    //border-bottom: 1px solid #ececec;
+    border-bottom: 0;
   }
 
   .main-nav__item {
@@ -466,7 +493,7 @@ a.main-nav__main-link {
     &--catalog {
       order: -8;
       font-size: 17px;
-      //border-bottom: 1px solid #ececec;
+      border-bottom: 0;
 
     }
 

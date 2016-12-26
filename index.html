@@ -302,7 +302,25 @@
     </div>
   </div>
 </footer>
+<div class="modal-content">
+  <h2 class="modal-content__title">Добавить в корзину</h2>
 
+  <p class="modal-content__text">Выберите размер</p>
+
+  <form class="modal-content__form" action="#" method="post">
+    <input type="radio" class="modal-content__input" id="s" name="size" value="s" checked>
+    <label for="s" class="modal-content__label">S</label>
+    <input type="radio" class="modal-content__input" id="m" name="size" value="m">
+    <label for="m" class="modal-content__label">M</label>
+    <input type="radio" class="modal-content__input" id="l" name="size" value="l">
+    <label for="l" class="modal-content__label">L</label>
+
+    <div class="modal-content__btn-wrapper">
+      <button type="submit" class="user-btn modal-content__btn">Добавить</button>
+    </div>
+  </form>
+</div>
+<div class="modal-overlay"></div>
 <script src="js/script.js"></script>
 </body>
 </html>
