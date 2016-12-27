@@ -1,44 +1,32 @@
-.about-as {
-
-}
-
 .about-as__wrapper {
   margin: 0 auto;
   width: 260px;
   padding-bottom: 10px;
-
   @media @tablet-widths {
     width: 668px;
     padding-bottom: 40px;
   }
   @media @desktop-widths {
     width: 1050px;
-
   }
 }
-
 .about-as__title {
   font-family: "Open Sans", Arial, sans-serif;
   margin-top: 33px;
   margin-bottom: 12px;
   font-size: 25px;
-
   @media @tablet-widths {
     font-size: 43px;
     margin-top: 80px;
   }
-
   @media @desktop-widths {
-
     font-size: 53px;
     margin-left: 175px;
     margin-top: 65px;
     margin-bottom: 43px;
   }
 }
-
 .about-as__list {
-
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -48,43 +36,33 @@
   font-weight: 700;
   line-height: 20px;
   list-style: none;
-
   @media @tablet-widths {
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 40px;
   }
-
   @media @desktop-widths {
     margin-left: 175px;
   }
-
 }
-
 .about-as__list-item {
-
   position: relative;
   padding-top: 55px;
   padding-bottom: 28px;
   font-weight: 700;
   font-size: 17px;
-
   @media @tablet-widths {
     width: 50%;
     padding-bottom: 56px;
     font-size: 20px;
     line-height: 30px;
   }
-
   @media @desktop-widths {
     width: 350px;
     font-size: 20px;
     line-height: 30px;
-
   }
-
 }
-
 .about-as__list-item {
   &--eco::before {
     content: "";
@@ -97,7 +75,6 @@
     background: url(../img/icon-feature-1.svg) no-repeat 50% 50%;
     background-size: 32px 37.3px;
   }
-
   &--price::before {
     content: "";
     position: absolute;
@@ -109,7 +86,6 @@
     background: url(../img/icon-feature-3.svg) no-repeat 50% 50%;
     background-size: 46.5px 27.3px;
   }
-
   &--likes::before {
     content: "";
     position: absolute;
@@ -121,7 +97,6 @@
     background: url(../img/icon-feature-5.svg) no-repeat 50% 50%;
     background-size: 33px 27.9px;
   }
-
   &--handmade::before {
     content: "";
     position: absolute;
@@ -133,7 +108,6 @@
     background: url(../img/icon-feature-2.svg) no-repeat 50% 50%;
     background-size: 34.3px;
   }
-
   &--native::before {
     content: "";
     position: absolute;
@@ -145,7 +119,6 @@
     background: url(../img/icon-feature-4.svg) no-repeat 50% 50%;
     background-size: 54.1px 23.2px;
   }
-
   &--giftwrap::before {
     content: "";
     position: absolute;
@@ -157,28 +130,22 @@
     background: url(../img/icon-feature-6.svg) no-repeat 50% 50%;
     background-size: 32.7px 32.5px;
   }
-
   @media @tablet-widths {
     &--eco {
       order: 0;
     }
-
     &--price {
       order: 2;
     }
-
     &--likes {
       order: 4;
     }
-
     &--handmade {
       order: 1;
     }
-
     &--native {
       order: 3;
     }
-
     &--giftwrap {
       order: 5;
     }
