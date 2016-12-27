@@ -5,7 +5,6 @@
   flex-direction: column;
   padding-bottom: 20px;
 
-
   &:hover{
     box-shadow: 0 6px 10px rgba(0,0,0,.1);
   }
@@ -17,7 +16,7 @@
   @media @tablet-widths {
     flex-direction: row;
     padding-bottom: 0;
-
+    margin-top: 50px;
   }
 
   @media  @desktop-widths {
@@ -69,7 +68,10 @@
 
 .catalog-item__title {
   font-size: 17px;
-  text-align: center;
+  text-align: left;
+  width: 204px;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover{
     opacity: .6;
@@ -82,8 +84,18 @@
   @media @tablet-widths {
     text-align: left;
     font-size: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 304px;
+    padding-top: 20px;
+    margin-bottom: 8px;
 
   }
+
+  @media  @desktop-widths {
+
+  }
+
 }
 
 .catalog-item__title a {
@@ -118,7 +130,8 @@
   padding-top: 20px;
   width: 204px;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
   color: #444;
   display: flex;
   justify-content: space-between;
@@ -128,6 +141,7 @@
     margin: 0 ;
     padding-top: 30px;
     padding-bottom: 30px;
+
   }
   @media  @desktop-widths {
     padding-top: 20px;
@@ -140,7 +154,7 @@
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   @media @tablet-widths {
-    font-size: 15px;
+    font-size: 17px;
   }
 
 }
